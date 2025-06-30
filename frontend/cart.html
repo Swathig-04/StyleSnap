@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cart | StyleSnap</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="cart-page">
+  <nav class="navbar">
+    <div class="brand">StyleSnap</div>
+    <ul class="nav-links center-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <!--<li><a id="loginLink" href="login.html">Login</a></li>-->
+    </ul>
+
+    <div class="right-section">
+      <a href="cart.html" class="cart-link">
+        🛒 <span id="cartCount" style="background: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px;">0</span>
+      </a>
+      <div class="profile-container">
+        <span id="profileIcon" class="profile-icon">👤</span>
+        <div id="profileDropdown" class="dropdown hidden"></div>
+      </div>
+    </div>
+  </nav>
+  
+
+  <div class="cart-wrapper">
+    <div class="cart-left">
+      <h2>My Bag</h2>
+      <div id="cart-list">
+        <p>Loading...</p>
+      </div>
+    </div>
+    <div class="cart-right">
+      <h3>PRICE DETAILS</h3>
+      <div class="price-box">
+        <p>Price (<span id="itemCount">0</span> items): ₹<span id="totalMRP">0</span></p>
+        <p>Discount: ₹<span id="discount">0</span></p>
+        <p>Platform Fee: ₹<span id="platformFee">20</span></p>
+        <hr />
+        <p><strong>Total Amount: ₹<span id="finalAmount">0</span></strong></p>
+        <button id="placeOrderBtn">PLACE ORDER</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/cart-count.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/config.js"></script>
+<script src="js/user-status.js"></script>
+
+
+</body>
+</html>

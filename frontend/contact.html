@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Home | StyleSnap</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="contact-page">
+  <nav class="navbar">
+    <div class="brand">StyleSnap</div>
+    <ul class="nav-links center-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <!--<li><a id="loginLink" href="login.html">Login</a></li>-->
+    </ul>
+
+    <div class="right-section">
+      <a href="cart.html" class="cart-link">
+        🛒 <span id="cartCount" style="background: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px;">0</span>
+      </a>
+      <div class="profile-container">
+        <span id="profileIcon" class="profile-icon">👤</span>
+        <div id="profileDropdown" class="dropdown hidden"></div>
+      </div>
+    </div>
+  </nav>
+</div>
+  <main class="contact-container">
+    <section class="form-section">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Fill out the form below.</p>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" name="email" required />
+        <label for="message">Message</label>
+        <textarea name="message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section class="info-section">
+      <h2>Get in Touch</h2>
+      <p>For queries or support, reach out to us:</p>
+      <div class="info-item">📞<span>+91 7093203079</span></div>
+      <div class="info-item">📧 <span>support@stylesnap.com</span></div>
+      <div class="info-item">📍 <span>Hyderabad, Telangana, India</span></div>
+    </section>
+  </main>
+<script src="js/config.js"></script>
+<script src="js/user-status.js"></script>
+<script src="js/cart-count.js"></script>
+<script src="js/api.js"></script>
+<script src="js/contact.js"></script> 
+</body>
+</html>

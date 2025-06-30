@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Details | StyleSnap</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand">StyleSnap</div>
+    <ul class="nav-links center-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <!--<li><a id="loginLink" href="login.html">Login</a></li>-->
+    </ul>
+    <div class="right-section">
+      <a href="cart.html" class="cart-link">
+        🛒 <span id="cartCount" style="background: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px;">0</span>
+      </a>
+      <div class="profile-container">
+        <span id="profileIcon" class="profile-icon">👤</span>
+        <div id="profileDropdown" class="dropdown hidden"></div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="product-detail-container">
+    <div class="product-image">
+      <img id="detailImage" src="" alt="Product Image" />
+    </div>
+    <div class="product-info">
+      <h2 id="detailName">Loading...</h2>
+      <p id="detailDesc"></p>
+      <p><strong>Price:</strong> ₹<span id="detailPrice"></span></p>
+      <p><strong>Rating:</strong> <span id="detailRating"></span> <span id="starRating"></span></p>
+      <p><strong>Material:</strong> <span id="detailMaterial"></span></p>
+      <p><strong>Size:</strong>
+        <select id="sizeDropdown">
+          <option value="">Select Size</option>
+        </select>
+      </p>
+      <button id="addToCartBtn" onclick="addToCart()" disabled>🛒 Add to Cart</button>
+    </div>
+  </div>
+  <script src="js/cart-count.js"></script>
+  <script src="js/product-details.js"></script>
+ 
+</body>
+</html>
